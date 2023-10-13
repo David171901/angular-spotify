@@ -31,7 +31,8 @@ export class SideBarComponent implements OnInit {
       {
         name: 'Tu biblioteca',
         icon: 'uil uil-chart',
-        router: ['/', 'favorites']
+        router: ['/', 'favorites'],
+        qyery: {key1: 'value1'},
       }
     ]
 
@@ -75,6 +76,5 @@ export class SideBarComponent implements OnInit {
         key3: 'value3'
       }
     })
-    console.log($event)
   }
 }
