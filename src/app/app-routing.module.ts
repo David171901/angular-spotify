@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthPageComponent } from '@modules/auth/pages/auth-page/auth-page.component';
 import { HomePageComponent } from '@modules/home/pages/home-page/home-page.component';
 
 const routes: Routes = [
@@ -11,7 +10,6 @@ const routes: Routes = [
   },
   {
     path: 'auth',
-    component: AuthPageComponent,
     loadChildren: () => import(`./modules/auth/auth.module`).then(m => m.AuthModule),
   }
 ];
